@@ -1,6 +1,6 @@
-* {
+/* * {
     box-sizing: border-box;
-}
+} */
 
 h1 {
     font-family: 'Dancing Script', cursive;
@@ -28,6 +28,7 @@ a {
     color: #00b4d8;
     font-family: 'Merriweather', serif;
 }
+
 body {
     background-color: black;
     color: #EEEDED;
@@ -53,6 +54,7 @@ body.switch {
 
 header {
     margin: 0 auto 2em auto;
+    transition: all 2s;
 }
 
 /* img{
@@ -81,7 +83,7 @@ header {
     transition: all 2s;
 }
 
-main {
+/* main {
     display: flex;
     justify-content: space-evenly;
     margin-top: -150pt;
@@ -92,7 +94,7 @@ main section {
     border: 1px rgb(235, 235, 235) dashed;
     margin: 0 .25em;
     padding: 1em;
-}
+} */
 
 a {
     text-decoration: none;
@@ -113,16 +115,14 @@ section a {
     line-height: 1em;
     display: inline-block;
     padding: .5em;
-    background: linear-gradient(to right, #ef6351, #e39695) no-repeat right bottom;
+    background: linear-gradient(to right, #f9b4ed, #9381ff) no-repeat right bottom;
     background-size: 0 2px;
     background-position-y: 80%;
-    background-position: ;
     transition: background-size 1300ms;
 }
 
 section a:hover {
     background-position-x: left;
-    /* background-position-y: 80%; */
     background-size: 100% 2px;
 }
 /* .container {
@@ -217,18 +217,6 @@ button.switch {
 button.switch:hover {
     background-color: #333;
     color: rgb(235, 235, 235)
-}
-
-@media only screen and (max-width: 599px) {
-
-    main{
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-        justify-content: center;
-        align-content: center;
-        /* padding: 0 0 50px 0; */
-    }
 }
 
 footer{
