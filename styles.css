@@ -148,7 +148,7 @@ footer{
     align-content: center;
 }
 
-/* @media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) {
     header{
         margin-right: 20pt;
     }
@@ -166,7 +166,7 @@ footer{
         border: 1px rgb(235, 235, 235) dashed;
         padding: 1em;
     }
-} */
+}
 
 @media only screen and (min-width: 1000px) {
     main{
