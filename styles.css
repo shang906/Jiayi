@@ -54,13 +54,11 @@ header {
 }
 
 #banner {
-    position: flex;
     display: flex;
     width: 1400px;
     height: 650px;
     margin: auto;
     overflow: hidden;
-    display: grid;
 	place-items: center;
     background-image: url(images/darkmap.png);
     background-repeat: no-repeat;
@@ -75,7 +73,7 @@ header {
 
 main{
     display: grid;
-    grid-template: 1fr;
+    grid-template-columns: 1fr;
     justify-content: center;
 }
 
