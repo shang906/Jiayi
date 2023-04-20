@@ -1,0 +1,50 @@
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.fa-expand{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 36px;
+    color: rgb(63, 46, 33);
+}
+
+.fa-expand:hover{
+    cursor: pointer;
+}
+
+section{
+    position: absolute;
+}
+
+#line1{
+    bottom: 0%;
+    left: 0%;
+}
+
+#img1{
+    bottom: 0%;
+    left: 0%;
+}
+
+.hidden{
+    opacity: 0;
+}
+
+.showing{
+    opacity: 1;
+}
+
+p{
+    font-family: 'Crete Round', serif;
+    font-size: 50pt;
+}
+
+/* #myVideo {
+    filter: grayscale(20%) contrast(50%) invert(100%);
+} */
