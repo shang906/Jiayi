@@ -1,0 +1,215 @@
+/* #showdata{
+    display: flex;
+} */
+
+.square {
+    height: 25px;
+    width: 25px;
+    background-color: #FFBE0B;
+    /* border-radius: 50%; */
+    display: inline-block;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    margin-top: 100pt;
+    font-family: 'Handlee', cursive;
+}
+
+h2{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10pt;
+    font-family: 'Handlee', cursive;
+}
+
+#month{
+    display: flex;
+}
+
+
+/* dots decoration*/
+.dot {
+    height: 22px;
+    width: 22px;
+    background-color: #FFBE0B;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_s {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FFBE0B;
+    border-radius: 50%;
+    display: inline-block;
+}
+  
+.dot_jh {
+    height: 22px;
+    width: 22px;
+    background-color: #FD8A09;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_jhs {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FD8A09;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_o {
+    height: 22px;
+    width: 22px;
+    background-color: #FB5607;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_os {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FB5607;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_tao {
+    height: 22px;
+    width: 22px;
+    background-color: #FD563A;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_taos {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FD563A;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_tf {
+    height: 22px;
+    width: 22px;
+    background-color: #FE5654;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_tfs {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FE5654;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fen {
+    height: 22px;
+    width: 22px;
+    background-color: #FF006E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fens {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #FF006E;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fz {
+    height: 22px;
+    width: 22px;
+    background-color: #C138EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fzs {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #C138EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_zf {
+    height: 22px;
+    width: 22px;
+    background-color: #A238EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_zfs {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #A238EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_z {
+    height: 22px;
+    width: 22px;
+    background-color: #8338EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_zs {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #8338EC;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fl {
+    height: 22px;
+    width: 22px;
+    background-color: #7086FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_fls {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #7086FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_dl {
+    height: 22px;
+    width: 22px;
+    background-color: #5586FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_dls {
+    height: 11.5px;
+    width: 11.5px;
+    background-color: #5586FF;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot_l {
+    height: 22px;
+    width: 22px;
+    background-color: #5586FF;
+    border-radius: 50%;
+    display: inline-block;
+}

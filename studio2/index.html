@@ -4,63 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Ma+Shan+Zheng&display=swap" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet" />
+    <script src="script.js" defer></script>
     <title>Check Yourself</title>
 </head>
 <body>
-    <section id="1">
-        <h1>Good Will Hunting</h1>
-        <date>Jan 20th 2022</date>
-        <p>People call these things imperfections, but they're not, that's the good stuff. And then ....</p>
-        <button>Read More</button>
-    </section>
+    <span class="square"></span>
 
-    <section id="2">
-        <h1>Be Somebody</h1>
-        <date>Feb 20th 2022</date>
-        <p>大海却越不过海，他只能把爱意藏在每一次望向你的眼神中，定格在仅有一张的合照里 ....</p>
-        <button>Read More</button>
-    </section>
+    <h1>Recently Watched Movies</h1>
+    <h2>Movies that I Watched in 2022</h2>
 
-    <section id="3">
-        <h1>The Intouchables</h1>
-        <date>Apr 22th 2022</date>
-        <p>Art is the only thing one leaves behind....</p>
-        <button>Read More</button>
-    </section>
+    <section id="showdata"></section>
+    <!-- <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Date Watched</th>
+                <th>Sentence</th>
+            </tr>
+        </thead>
+        <tbody id="showdata">
 
-    <section id="4">
-        <h1>Hi Mom</h1>
-        <date>July 15th 2022</date>
-        <p>我来你高兴吗？我高兴啊！我能让你更高兴。</p>
-        <button>Read More</button>
-    </section>
+        </tbody>
+    </table> -->
 
-    <section id="5">
-        <h1>One Day</h1>
-        <date>July 6th 2022</date>
-        <p>Whatever happens tomorrow, We've had today. And if we..</p>
-        <button>Read More</button>
-    </section>
+    <div id="month">
+        <p>Jan</p>
+        <p>Feb</p>
+        <p>Mar</p>
+        <p>Apr</p>
+        <p>May</p>
+        <p>June</p>
+        <p>July</p>
+        <p>Aug</p>
+        <p>Sep</p>
+        <p>Oct</p>
+        <p>Nov</p>
+        <p>Dec</p>
+    </div>
 
-    <section id="6">
-        <h1>Big Fish</h1>
-        <date>Sep 12th 2022</date>
-        <p>Dreams are what keep a man going...</p>
-        <button>Read More</button>
-    </section>
+    <div id="dian">
+        <span class="dot"></span>
+        <span class="dot_s"></span>
+        <span class="dot_s"></span>
+        <span class="dot_s"></span>
+        <span class="dot_s"></span>
+        <span class="dot_s"></span>
+        <span class="dot_s"></span>
 
-    <section id="7">
-        <h1>Dying to Survive</h1>
-        <date>Oct 15th 2022</date>
-        <p>愿世界变好，不是因为救世主，而是因为追光者。</p>
-        <button>Read More</button>
-    </section>
+        <span class="dot_jh"></span>
+        <span class="dot_jhs"></span>
+        <span class="dot_jhs"></span>
+        <span class="dot_jhs"></span>
+        <span class="dot_jhs"></span>
+        <span class="dot_jhs"></span>
+        <span class="dot_jhs"></span>
 
-    <section id="8">
-        <h1>Run Into Dust</h1>
-        <date>Dec 6th 2022</date>
-        <p>啥人有啥人的命数呢，麦子也一样，它有它的命数呢，还不是，到夏天，让镰刀割掉了...</p>
-        <button>Read More</button>
-    </section>
+        <span class="dot_o"></span>
+        <span class="dot_os"></span>
+        <span class="dot_os"></span>
+        <span class="dot_os"></span>
+        <span class="dot_os"></span>
+        <span class="dot_os"></span>
+        <span class="dot_os"></span>
+
+        <span class="dot_tao"></span>
+        <span class="dot_taos"></span>
+        <span class="dot_taos"></span>
+        <span class="dot_taos"></span>
+        <span class="dot_taos"></span>
+        <span class="dot_taos"></span>
+        <span class="dot_taos"></span>
+
+        <span class="dot_tf"></span>
+        <span class="dot_tfs"></span>
+        <span class="dot_tfs"></span>
+        <span class="dot_tfs"></span>
+        <span class="dot_tfs"></span>
+        <span class="dot_tfs"></span>
+        <span class="dot_tfs"></span>
+
+        <span class="dot_fen"></span>
+        <span class="dot_fens"></span>
+        <span class="dot_fens"></span>
+        <span class="dot_fens"></span>
+        <span class="dot_fens"></span>
+        <span class="dot_fens"></span>
+        <span class="dot_fens"></span>
+
+        <span class="dot_fz"></span>
+        <span class="dot_fzs"></span>
+        <span class="dot_fzs"></span>
+        <span class="dot_fzs"></span>
+        <span class="dot_fzs"></span>
+        <span class="dot_fzs"></span>
+        <span class="dot_fzs"></span>
+
+        <span class="dot_zf"></span>
+        <span class="dot_zfs"></span>
+        <span class="dot_zfs"></span>
+        <span class="dot_zfs"></span>
+        <span class="dot_zfs"></span>
+        <span class="dot_zfs"></span>
+        <span class="dot_zfs"></span>
+
+        <span class="dot_z"></span>
+        <span class="dot_zs"></span>
+        <span class="dot_zs"></span>
+        <span class="dot_zs"></span>
+        <span class="dot_zs"></span>
+        <span class="dot_zs"></span>
+        <span class="dot_zs"></span>
+
+        <span class="dot_fl"></span>
+        <span class="dot_fls"></span>
+        <span class="dot_fls"></span>
+        <span class="dot_fls"></span>
+        <span class="dot_fls"></span>
+        <span class="dot_fls"></span>
+        <span class="dot_fls"></span>
+
+        <span class="dot_dl"></span>
+        <span class="dot_dls"></span>
+        <span class="dot_dls"></span>
+        <span class="dot_dls"></span>
+        <span class="dot_dls"></span>
+        <span class="dot_dls"></span>
+        <span class="dot_dls"></span>
+
+        <span class="dot_l"></span>
+    </div>
+
+    
+
+    
 </body>
 </html>

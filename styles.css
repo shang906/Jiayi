@@ -1,9 +1,7 @@
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    display: block;
     margin-top: 70px;
     color: #48cae4;
 }
