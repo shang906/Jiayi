@@ -39,7 +39,7 @@
                 counter = 0;
             }
             fadeInLine(counter);
-        }, 3000);
+        }, 2000);
     }
 
     fadeInLine(counter);

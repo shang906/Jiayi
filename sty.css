@@ -1,10 +1,7 @@
-/* * {
-    box-sizing: border-box;
-} */
-
+/* text style */
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 80px;
+    font-size: 50px;
     display: flex;
     justify-content: center;
     margin-top: 70px;
@@ -13,9 +10,10 @@ h1 {
 
 h2 {
     font-family: 'Dancing Script', cursive;
-    display: absolute;
-    margin-top: -270pt;
-    margin-left: 700pt;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -270pt;
+    margin-right: -600pt; */
     color: #0096c7;
 }
 
@@ -27,63 +25,6 @@ h3 {
 a {
     color: #00b4d8;
     font-family: 'Merriweather', serif;
-}
-
-body {
-    background-color: black;
-    color: #EEEDED;
-    transition: all 2s;
-}
-
-body.switch {
-    background-color:#EEEDED;
-    /* background-color: white; */
-    color: #333;
-}
-
-#container {
-    position: relative;
-    width: 100%;
-    max-width: 1366px;
-    /* make sure the columns don't get too small and text stays readable */
-    min-width: 900px;
-    margin: 1em auto;
-    padding-top: 2em;
-    
-}
-
-header {
-    margin: 0 auto 2em auto;
-    transition: all 2s;
-}
-
-/* img{
-    display: flex;
-    margin-top: -600px;
-    margin-left: -610px;
-} */
-
-#banner {
-    position: flex;
-    display: flex;
-    width: 1400px;
-    height: 650px;
-    margin: auto;
-    overflow: hidden;
-    display: grid;
-	place-items: center;
-    background-image: url(images/darkmap.png);
-    background-repeat: no-repeat;
-    background-size: 75%;
-    background-position: 50% -1%;
-}
-
-#banner.switch {
-    background-image: url(images/lightmap.svg);
-    transition: all 2s;
-}
-
-a {
     text-decoration: none;
 }
 
@@ -98,6 +39,7 @@ section li {
     padding-left: 1.2em;
 }
 
+/* text decoration */
 section a {
     line-height: 1em;
     display: inline-block;
@@ -112,91 +54,85 @@ section a:hover {
     background-position-x: left;
     background-size: 100% 2px;
 }
-/* .container {
+
+/* body style*/
+body {
+    background-color: black;
+    color: #EEEDED;
+    transition: all 2s;
 }
 
-.label {
-  height: 60px;
-  width: 120px;
-  background-color: #ffffff;
-  border-radius: 30px;
-  -webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
-    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
-    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
-    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
-    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
+body.switch {
+    background-color:#EEEDED;
+    /* background-color: white; */
+    color: #333;
+    transition: all 2s;
 }
 
-.label:hover {
-  -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
-  transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+#container {
+    position: relative;
+    width: 100%;
+    max-width: 1366px;
+    /* make sure the columns don't get too small and text stays readable */
+    min-width: 900px;
+    margin: 1em auto;
+    padding-top: 2em;
+    transition: all 2s;
 }
 
-#checkbox:checked ~ .label:hover {
-  -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
-  transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+header {
+    margin: 0 auto 2em auto;
+    transition: all 2s;
 }
 
-#checkbox {
-  display: none;
+#banner {
+    /* display: flex; */
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    overflow: hidden;
+	place-items: center;
+    background-image: url(images/darkmap.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: all 2s;
+    /* background-position: 50% -1%; */
 }
 
-#checkbox:checked ~ .label::before {
-  left: 70px;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+#banner.switch {
+    background-image: url(images/lightmap.svg);
 }
 
-.label::before {
-  position: absolute;
-  content: "";
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #000000;
-  background-image: linear-gradient(
-    130deg,
-    #757272 10%,
-    #ffffff 11%,
-    #726f6f 62%
-  );
-  left: 10px;
-  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-} */
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+}
 
-button {
+main section {
+    width: 90%;
+    border: 1px rgb(235, 235, 235) dashed;
+    margin: 0.5em;
+    padding: 1em;
+}
+
+/*switch*/
+.plane-switch {
     position: absolute;
     top: 20px;
     right: 20px;
     padding: 12px;
-    background-color: orange;
-    color: #333;
+    /* background-color: orange;
+    color: #333; */
     border: 1px solid transparent;
 }
 
-button:hover {
-    background-color: coral;
+.plane-switch:hover {
+    /* background-color: coral; */
     cursor: pointer;
 }
 
-button.switch {
+/* .plane-switch.switch {
     background-color: rgb(235, 235, 235);
     border-color: #333;
 }
@@ -204,7 +140,7 @@ button.switch {
 button.switch:hover {
     background-color: #333;
     color: rgb(235, 235, 235)
-}
+} */
 
 footer{
     color: #87d4e4;
@@ -214,8 +150,16 @@ footer{
 }
 
 @media only screen and (min-width: 600px) {
-    header{
+    /* header{
         margin-right: 20pt;
+    } */
+
+    header h1{
+        font-size: 60px;
+        margin-top: 65pt;
+        margin-left: 100pt;
+        display: flex;
+        justify-content:right;
     }
 
     main{
@@ -224,18 +168,38 @@ footer{
         gap: 20px;
         justify-content: center;
         align-content: center;
-        /* padding: auto auto; */
     }
 
     main section {
         width: 90%;
         border: 1px rgb(235, 235, 235) dashed;
-        /* margin: 0 .25em; */
         padding: 1em;
+    }
+
+    #banner {
+        display: flex;
+        width: 700px;
+        height: 350px;
+        margin: auto;
+        overflow: hidden;
+        place-items: center;
+        background-image: url(images/darkmap.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: 50% -1%;
+        transition: all 2s;
     }
 }
 
 @media only screen and (min-width: 1000px) {
+    header h1{
+        font-size: 70px;
+        margin-top: 0pt;
+        margin-left: 230pt;
+        display: flex;
+        justify-content:right;
+    }
+
     main{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -251,4 +215,347 @@ footer{
         /* margin: 0 .25em; */
         padding: 1em;
     }
+
+    #banner {
+        display: flex;
+        width: 1100px;
+        height: 400px;
+        margin: auto;
+        overflow: hidden;
+        place-items: center;
+        background-image: url(images/darkmap.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: 50% -1%;
+        transition: all 2s;
+    }
+    
+}
+
+/* switch */
+.plane-switch {
+    --dot: #fff;
+    --street: #6B6D76;
+    --street-line: #A8AAB4;
+    --street-line-mid: #C0C2C8;
+    --sky-1: #60A7FA;
+    --sky-2: #2F8EFC;
+    --light-1: rgba(255, 233, 0, 1);
+    --light-2: rgba(255, 233, 0, .3);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .plane-switch input {
+    display: none;
+  }
+  
+  .plane-switch input + div {
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    position: relative;
+    overflow: hidden;
+    width: 50px;
+    height: 25px;
+    padding: 1px;
+    border-radius: 13px;
+    background: linear-gradient(90deg, var(--street) 0%, var(--street) 25%, var(--sky-1) 75%, var(--sky-2) 100%) left var(--p, 0%) top 0;
+    background-position-x: var(--p, 0%);
+    background-size: 400% auto;
+    transition: background-position 0.6s;
+  }
+  
+  .plane-switch input + div:before, .plane-switch input + div:after {
+    content: "";
+    display: block;
+    position: absolute;
+    transform: translateX(var(--s, 0));
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div:before {
+    width: 42px;
+    right: 2px;
+    top: 4px;
+    height: 1px;
+    background: var(--street-line);
+    box-shadow: 0 16px 0 0 var(--street-line);
+  }
+  
+  .plane-switch input + div:after {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    left: 23px;
+    top: 1px;
+    -webkit-animation: lights2 2s linear infinite;
+    animation: lights2 2s linear infinite;
+    box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+  }
+  
+  .plane-switch input + div span {
+    display: block;
+    position: absolute;
+  }
+  
+  .plane-switch input + div span.street-middle {
+    top: 12px;
+    left: 21px;
+    width: 3px;
+    height: 1px;
+    transform: translateX(var(--s, 0));
+    background: var(--street-line-mid);
+    box-shadow: 5px 0 0 var(--street-line-mid), 10px 0 0 var(--street-line-mid), 15px 0 0 var(--street-line-mid), 20px 0 0 var(--street-line-mid), 25px 0 0 var(--street-line-mid);
+    transition: transform 0.3s;
+  }
+  
+  .plane-switch input + div span.cloud {
+    width: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background: #fff;
+    position: absolute;
+    top: var(--ct, 8px);
+    left: 100%;
+    opacity: var(--co, 0);
+    transition: opacity 0.3s;
+    -webkit-animation: clouds2 2s linear infinite var(--cd, 0s);
+    animation: clouds2 2s linear infinite var(--cd, 0s);
+  }
+  
+  .plane-switch input + div span.cloud:before, .plane-switch input + div span.cloud:after {
+    content: "";
+    position: absolute;
+    transform: translateX(var(--cx, 0));
+    border-radius: 50%;
+    width: var(--cs, 5px);
+    height: var(--cs, 5px);
+    background: #fff;
+    bottom: 1px;
+    left: 1px;
+  }
+  
+  .plane-switch input + div span.cloud:after {
+    --cs: 6px;
+    --cx: 4px;
+  }
+  
+  .plane-switch input + div span.cloud.two {
+    --ct: 20px;
+    --cd: 1s;
+    opacity: var(--co-2, 0);
+  }
+  
+  .plane-switch input + div div {
+    display: table;
+    position: relative;
+    z-index: 1;
+    padding: 5px;
+    border-radius: 50%;
+    background: var(--dot);
+    transform: translateX(var(--x, 0));
+    transition: transform 0.6s cubic-bezier(0.2, 0.8, 0.35, 1.2);
+  }
+  
+  .plane-switch input + div div svg {
+    width: 13px;
+    height: 13px;
+    display: block;
+    color: var(--c, var(--street));
+    transition: color 0.6s;
+  }
+  
+  .plane-switch input:checked + div {
+    --p: 100%;
+    --x: 25px;
+    --s: -50px;
+    --c: var(--sky-2);
+    --co: .8;
+    --co-2: .6;
+  }
+  
+  @keyframes lights2 {
+    20%, 30% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-1), 8px 21px 0 var(--light-1), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  
+    55%, 65% {
+      box-shadow: inset 0 0 0 2px var(--light-2), 0 21px 0 var(--light-2), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-1), 16px 21px 0 var(--light-1);
+    }
+  
+    90%, 100% {
+      box-shadow: inset 0 0 0 2px var(--light-1), 0 21px 0 var(--light-1), 8px 0 0 var(--light-2), 8px 21px 0 var(--light-2), 16px 0 0 var(--light-2), 16px 21px 0 var(--light-2);
+    }
+  }
+  
+  @keyframes clouds2 {
+    97% {
+      transform: translateX(-72px);
+      visibility: visible;
+    }
+  
+    98%, 100% {
+      visibility: hidden;
+    }
+  
+    99% {
+      transform: translateX(-72px);
+    }
+  
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT License
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  /* color: #232323; */
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }

@@ -1,16 +1,18 @@
 h1 {
     font-family: 'Dancing Script', cursive;
     font-size: 80px;
-    display: block;
+    display: flex;
+    justify-content: right;
+    align-content: center;
     margin-top: 70px;
     color: #48cae4;
 }
 
 h2 {
     font-family: 'Dancing Script', cursive;
-    display: absolute;
-    margin-top: -270pt;
-    margin-right: -600pt;
+    display: flex;
+    /* margin-top: -270pt;
+    margin-right: -600pt; */
     color: #0096c7;
 }
 
@@ -163,6 +165,20 @@ footer{
         border: 1px rgb(235, 235, 235) dashed;
         padding: 1em;
     }
+
+    #banner {
+        display: flex;
+        width: 700px;
+        height: 450px;
+        margin: auto;
+        overflow: hidden;
+        place-items: center;
+        background-image: url(images/darkmap.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: 50% -1%;
+    }
+    
 }
 
 @media only screen and (min-width: 1000px) {
@@ -181,4 +197,18 @@ footer{
         /* margin: 0 .25em; */
         padding: 1em;
     }
+
+    #banner {
+        display: flex;
+        width: 1100px;
+        height: 650px;
+        margin: auto;
+        overflow: hidden;
+        place-items: center;
+        background-image: url(images/darkmap.png);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: 50% -1%;
+    }
+    
 }

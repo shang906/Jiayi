@@ -2,26 +2,93 @@
     display: flex;
 } */
 
-.square {
+
+.box-content {
+    bottom: 0;
     height: 25px;
+    left: calc(50% - 70px);
+    position: absolute;
+    top: 80px;
     width: 25px;
     background-color: #FFBE0B;
-    /* border-radius: 50%; */
-    display: inline-block;
+    color: #FFBE0B;
+}
+
+.box-content2 {
+    bottom: 0;
+    height: 25px;
+    left: calc(50% - 35px);
+    position: absolute;
+    top: 80px;
+    width: 25px;
+    background-color: #FB5607;
+    color: #FB5607;
+}
+
+.box-content3 {
+    bottom: 0;
+    height: 25px;
+    left: calc(50%);
+    position: absolute;
+    top: 80px;
+    width: 25px;
+    background-color: #FF006E;
+    color: #FF006E;
+}
+
+.box-content4 {
+    bottom: 0;
+    height: 25px;
+    left: calc(50% + 35px);
+    position: absolute;
+    top: 80px;
+    width: 25px;
+    background-color: #8338EC;
+    color: #8338EC;
+}
+
+.box-content5 {
+    bottom: 0;
+    height: 25px;
+    left: calc(50% + 70px);
+    position: absolute;
+    top: 80px;
+    width: 25px;
+    background-color: #3A86FF;
+    color: #3A86FF;
 }
 
 h1{
     display: flex;
     justify-content: center;
-    margin-top: 100pt;
-    font-family: 'Handlee', cursive;
+    margin-top: 90pt;
+    font-family: 'Annie Use Your Telescope', cursive;
 }
 
 h2{
     display: flex;
     justify-content: flex-end;
     margin-right: 10pt;
-    font-family: 'Handlee', cursive;
+    font-family: 'Annie Use Your Telescope', cursive;
+}
+
+.line {
+    bottom: 0;
+    height: 10px;
+    position: absolute;
+    top: 73%;
+    width: 100%;
+    background-color: #D9D9D9;
+    color: #D9D9D9;
+}
+
+.line1 {
+    height: 300px;
+    position: absolute;
+    top: 73%-300px;
+    width: 10px;
+    background-color: #D9D9D9;
+    color: #D9D9D9;
 }
 
 #month{

@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    const button = document.querySelector('button');
+    const button = document.querySelector('input');
     const body = document.querySelector('body');
     const banner = document.querySelector('#banner');
     const sections = document.querySelectorAll('section')
